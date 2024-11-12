@@ -5,7 +5,7 @@ You can read about his work creating a Lego elevation map of Budapest [here](htt
 
 ## Downloading DEMs
 
-I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all the GeoTIFF tiles from the Global 30 Arc-Second Elevation (GTOPO30) dataset:
+I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all the GeoTIFF tiles from the [Global 30 Arc-Second Elevation (GTOPO30)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30?qt-science_center_objects=0#qt-science_center_objects) dataset:
 
 ![EarthExplorer webpage screenshot](figures/earth_explorer.png)
 
