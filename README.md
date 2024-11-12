@@ -15,8 +15,9 @@ To download all ~33 tiles in the dataset. Here's an example:
 
 ## Merging DEMs
 
-The challenge was finding the right process to merget the DEMs, as each one was on the order of 50 Mb. What worked was to [create a VRT](https://gdal.org/en/latest/programs/gdalbuildvrt.html), or Virtual Raster Table, which helps relieve the memory burden for the system.
+The challenge here was finding the right process to merge the DEMs, as each one was on the order of 50 MB. What worked was to [create a VRT](https://gdal.org/en/latest/programs/gdalbuildvrt.html), or Virtual Raster Table, which helps relieve the memory burden for the system.
 
 Using matplotlib, it was easy to save the resulting .tif file as a JPG for pretty viewing:
 
 ![JPG of merged worldwide DEM](figures/dem_world.jpg)
+
