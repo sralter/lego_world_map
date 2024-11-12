@@ -11,7 +11,7 @@ I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all 
 
 ![EarthExplorer webpage screenshot](figures/earth_explorer.png)
 
-
+ADD DEM TILE EXAMPLE
 
 Using matplotlib, it was easy to save the resulting .tif file as a JPG for pretty viewing:
 
