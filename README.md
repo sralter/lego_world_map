@@ -5,11 +5,11 @@ You can read about his work creating a Lego elevation map of Budapest [here](htt
 
 ## Downloading DEMs
 
-I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all the tiles from the Global 30 Arc-Second Elevation (GTOPO30) dataset:
+I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all the GeoTIFF tiles from the Global 30 Arc-Second Elevation (GTOPO30) dataset:
 
 ![EarthExplorer webpage screenshot](figures/earth_explorer.png)
 
-To download all ~33 tiles in the dataset. Here's an example:
+I manually downloaded all ~33 tiles in the dataset. Here's an example of what the raw GeoTiff looks like:
 
 ![GTopo30 Example: Caribbean](figures/gt30w100n40_down.jpg)
 
