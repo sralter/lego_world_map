@@ -12,9 +12,9 @@ Lego has previously made a world map (see below), but I think I could do a littl
 
 ## Table of Contents<a name='toc'></a>
 
-[Downloading DEMs](#dem)
-[Merging DEMs](#merge)
-[Create Grid](#grid)
+[Downloading DEMs](#dem)  
+[Merging DEMs](#merge)  
+[Create Grid](#grid)  
 
 ## Downloading DEMs<a name='dem'></a>
 
