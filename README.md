@@ -48,4 +48,4 @@ We'll have to figure out what the dimensions of the Lego set are (in Lego studs)
 
 Using a function from Milan, we can create a grid over the polygon. Let's look at the contiguous USA:
 
-![Grid on polygon of the contiguous USA](grid_usa)
+![Grid on polygon of the contiguous USA](figures/grid_usa.jpg)
