@@ -15,6 +15,10 @@ Lego has previously made a world map (see below), but I think I could do a littl
 [Downloading DEMs](#dem)  
 [Merging DEMs](#merge)  
 [Create Grid](#grid)  
+[Map Elevation Per Grid Cell](#calc)  
+[Discretize Elevation into Bins](#disc_elev)
+[Quantize Surface Color into Bins](#disc_color)
+[Discretize color image and make patches for building](#patches)
 
 ## Downloading DEMs<a name='dem'></a>
 
@@ -49,3 +53,28 @@ We'll have to figure out what the dimensions of the Lego set are (in Lego studs)
 Using a function from Milan, we can create a grid over the polygon. Let's look at the contiguous USA:
 
 ![Grid on polygon of the contiguous USA](figures/grid_usa.jpg)
+
+## Map Elevation Per Grid Cell<a name='calc'></a>
+
+Using zonal statistics, I calculated the mean elevation for each grid cell.
+
+![Square grid with mean elevation](figures/square_grid_with_elevation.jpg)
+
+## Discretize Elevation<a name='disc_elev'></a>
+
+Here, I've shown 7 bins of elevation using the quantile binning method that allows for roughly equal representation of the amount of data into each bin.
+
+![Elevation with 7 bins](figures/elevation_with_7.jpg)
+
+## Quantize Color<a name='disc_color'></a>
+
+We all know maps with the surface color of Earth, like this:
+
+![Blue Marble from NASA](figures/bluemarble-2048.png)
+
+But that file has over 200,000 individual colors, waaay more than what Lego possesses. I first brightened the image and then used the median cut algorithm to lower the colorspace of the image down to 12 colors. You'll notice that half the colors are of the blue ocean, but that's ok. The important thing is to have enough colors to make the land surface interesting.
+
+![Quantized Blue Marble into 12 Colors](figures/bluemarble-2048_downsampled_12_example.png)
+
+## Discretize surface color, make patches for building the lego<a name='patches'></a>
+
