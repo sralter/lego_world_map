@@ -102,6 +102,4 @@ I saved the patches for future use. Here is what Patch 1 looks like:
 
 And that completes the project! 
 
-![Lego logo](figures/lego-logo.jpg)
-
 Now where did that last Lego piece go...
