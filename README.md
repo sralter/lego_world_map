@@ -70,7 +70,8 @@ Here, I've shown 7 bins of elevation using the quantile binning method that allo
 
 We all know maps with the surface color of Earth, like this:
 
-![Blue Marble from NASA](figures/bluemarble-2048.png)<a name="bluemarble"></a>
+<a name="bluemarble"></a>
+![Blue Marble from NASA](figures/bluemarble-2048.png)
 
 But that file has over 200,000 individual colors, waaay more than what Lego possesses. I first brightened the image and then used the median cut algorithm to lower the colorspace of the image down to 12 colors. You'll notice that half the colors are of the blue ocean, but that's ok. The important thing is to have enough colors to make the land surface interesting.
 
