@@ -16,9 +16,12 @@ Lego has previously made a world map (see below), but I think I could do a littl
 [Merging DEMs](#merge)  
 [Create Grid](#grid)  
 [Map Elevation Per Grid Cell](#calc)  
-[Discretize Elevation into Bins](#disc_elev)
-[Quantize Surface Color into Bins](#disc_color)
-[Discretize color image and make patches for building](#patches)
+[Discretize Elevation into Bins](#disc_elev)  
+[Quantize Surface Color into Bins](#disc_color)  
+[Discretize color image and make patches for building](#patches)  
+  [Resize image and apply grid](#resize)  
+  [Overview of the patches](#over)  
+  [Save patches](#save)  
 
 ## Downloading DEMs<a name='dem'></a>
 
@@ -79,19 +82,19 @@ But that file has over 200,000 individual colors, waaay more than what Lego poss
 
 ## Discretize surface color, make patches for building the lego<a name='patches'></a>
 
-### Resize image and apply grid
+### Resize image and apply grid<a name='resize'></a>
 
-I resized the image to be 160 units by 80 units becuase that was faithful to the [Blue Marble](#bluemarble) image. I also plotted the colors contained within the image:
+I resized the image to be 160 units by 80 units becuase that was faithful to the [Blue Marble](#bluemarble) image. I also plotted the colors contained within the image, which would be helpful for someone actually building the map:
 
 ![Resized surface color image (160x80)](figures/bluemarble_160x80_overview.jpg)
 
-### Overview of the patches
+### Overview of the patches<a name='over'></a>
 
 I created an image with a "patched" version of the map to show all 50 patches needed to build the map:
 
 ![Patch overview](figures/patches/overview.jpg)
 
-### Save patches
+### Save patches<a name='save'></a>
 
 I saved the patches for future use. Here is what Patch 1 looks like:
 
