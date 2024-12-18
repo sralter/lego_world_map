@@ -79,4 +79,24 @@ But that file has over 200,000 individual colors, waaay more than what Lego poss
 
 ## Discretize surface color, make patches for building the lego<a name='patches'></a>
 
-I resized the image to be 160 units by 80 units becuase that was faithful to the [Blue Marble](#bluemarble) image.
+### Resize image and apply grid
+
+I resized the image to be 160 units by 80 units becuase that was faithful to the [Blue Marble](#bluemarble) image. I also plotted the colors contained within the image:
+
+![Resized surface color image (160x80)](figures/bluemarble_160x80_overview.jpg)
+
+### Overview of the patches
+
+I created an image with a "patched" version of the map to show all 50 patches needed to build the map:
+
+![Patch overview](figures/patches/overview.jpg)
+
+### Save patches
+
+I saved the patches for future use. Here is what Patch 1 looks like:
+
+![Patch 1](figures/patches/patch_001.jpg)
+
+And that completes the project! 
+
+Now where did that last Lego piece go...
