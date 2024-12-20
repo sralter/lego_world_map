@@ -22,6 +22,8 @@ Lego has previously made a world map (see below), but I think I could do a littl
   [Resize image and apply grid](#resize)  
   [Overview of the patches](#over)  
   [Save patches](#save)  
+[Future project goals](#future)  
+[Project challenges](#challenges)
 
 ## Downloading DEMs<a name='dem'></a>
 
@@ -103,3 +105,15 @@ I saved the patches for future use. Here is what a single patch looks like:
 And that completes the project! 
 
 Now where did that last Lego piece go...
+
+## Future Project Goals<a name='future'></a>
+
+[] Make the work into a function
+[] Post it to my website so others can make their own maps
+
+## Project Challenges and Solutions<a name='challenges'></a>
+
+* **Challenge**: How to merge DEMs without overloading system memory?
+  > **Solution**: Use virtual raster tables
+* **Challenge**: Artifacts appear when resizing the DEM
+  > **Solution**: First troubleshoot on which layer (DEM, world shoreline polygon, etc.) is giving me trouble, then...
