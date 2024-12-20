@@ -27,6 +27,8 @@ Lego has previously made a world map (see below), but I think I could do a littl
 
 ## Downloading DEMs<a name='dem'></a>
 
+[Back to TOC](#toc)
+
 I went to USGS' [EarthExplorer](https://earthexplorer.usgs.gov) to download all the GeoTIFF tiles from the [Global 30 Arc-Second Elevation (GTOPO30)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30?qt-science_center_objects=0#qt-science_center_objects) dataset:
 
 ![EarthExplorer webpage screenshot](figures/earth_explorer.png)
@@ -37,6 +39,8 @@ I manually downloaded all 33 tiles in the dataset. Here's an example of what the
 
 ## Merging DEMs<a name='merge'></a>
 
+[Back to TOC](#toc)
+
 The challenge here was finding the right process to merge the DEMs, as each one was on the order of 50 MB. What worked was to [create a VRT](https://gdal.org/en/latest/programs/gdalbuildvrt.html), or Virtual Raster Table from the GDAL library, which helps relieve the memory burden for the system.
 
 Using matplotlib, it was easy to save the resulting .tif file as a JPG for pretty viewing:
@@ -44,6 +48,8 @@ Using matplotlib, it was easy to save the resulting .tif file as a JPG for prett
 ![JPG of merged worldwide DEM](figures/dem_world.jpg)
 
 ## Create Grid<a name='grid'></a>
+
+[Back to TOC](#toc)
 
 Now we have to rasterize the elevation map. This is crucial as we'll be eventually making this map in Lego, which are bricks (duh).
 
@@ -61,17 +67,23 @@ Using a function from Milan, we can create a grid over the polygon. Let's look a
 
 ## Map Elevation Per Grid Cell<a name='calc'></a>
 
+[Back to TOC](#toc)
+
 Using zonal statistics, I calculated the mean elevation for each grid cell.
 
 ![Square grid with mean elevation](figures/square_grid_with_elevation.jpg)
 
 ## Discretize Elevation<a name='disc_elev'></a>
 
+[Back to TOC](#toc)
+
 Here, I've shown 7 bins of elevation using the quantile binning method that allows for roughly equal representation of the amount of data into each bin.
 
 ![Elevation with 7 bins](figures/elevation_with_7.jpg)
 
 ## Quantize Color<a name='disc_color'></a>
+
+[Back to TOC](#toc)
 
 We all know maps with the surface color of Earth, like this:
 
@@ -84,7 +96,11 @@ But that file has over 200,000 individual colors, waaay more than what Lego poss
 
 ## Discretize surface color, make patches for building the lego<a name='patches'></a>
 
+[Back to TOC](#toc)
+
 ### Resize image and apply grid<a name='resize'></a>
+
+[Back to TOC](#toc)
 
 I resized the image to be 160 units by 80 units becuase that was faithful to the [Blue Marble](#bluemarble) image. I also plotted the colors contained within the image, which would be helpful for someone actually building the map:
 
@@ -92,11 +108,15 @@ I resized the image to be 160 units by 80 units becuase that was faithful to the
 
 ### Overview of the patches<a name='over'></a>
 
+[Back to TOC](#toc)
+
 I created an image with a "patched" version of the map to show all 50 patches needed to build the map:
 
 ![Patch overview](figures/patches/overview.jpg)
 
 ### Save patches<a name='save'></a>
+
+[Back to TOC](#toc)
 
 I saved the patches for future use. Here is what a single patch looks like:
 
@@ -108,10 +128,14 @@ Now where did that last Lego piece go...
 
 ## Future Project Goals<a name='future'></a>
 
+[Back to TOC](#toc)
+
 - [ ] Make the project into a function  
 - [ ] Post it to my website so others can make their own maps
 
 ## Project Challenges and Solutions<a name='challenges'></a>
+
+[Back to TOC](#toc)
 
 * **Challenge**: How to merge DEMs without overloading system memory?
   > **Solution**: Use virtual raster tables
