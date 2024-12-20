@@ -96,9 +96,9 @@ I created an image with a "patched" version of the map to show all 50 patches ne
 
 ### Save patches<a name='save'></a>
 
-I saved the patches for future use. Here is what Patch 1 looks like:
+I saved the patches for future use. Here is what a single patch looks like:
 
-![Patch 1](figures/patches/patch_001.jpg)
+![Patch 1](figures/patches/patch_013.jpg)
 
 And that completes the project! 
 
