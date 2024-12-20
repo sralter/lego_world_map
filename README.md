@@ -108,8 +108,8 @@ Now where did that last Lego piece go...
 
 ## Future Project Goals<a name='future'></a>
 
-[] Make the work into a function
-[] Post it to my website so others can make their own maps
+- [ ] Make the project into a function  
+- [ ] Post it to my website so others can make their own maps
 
 ## Project Challenges and Solutions<a name='challenges'></a>
 
